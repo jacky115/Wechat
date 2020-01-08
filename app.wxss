@@ -1,5 +1,5 @@
 /**app.wxss**/
-/* @import "style/iconfont.css"; */
+@import "style/iconfont.css";
 page,view,image,swiper,swiper_item,navigator,video{
   box-sizing: border-box;
 }
