@@ -1,8 +1,9 @@
 {
   "pages": [
     "pages/index/index",
-    "components/MyTitle/MyTitle",
-    "pages/logs/logs"
+    "pages/detil/detil",
+    "components/MyTitle/MyTitle"
+    
   ],
   "window": {
     "backgroundTextStyle": "light",
