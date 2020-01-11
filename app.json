@@ -1,9 +1,11 @@
 {
   "pages": [
+    
     "pages/index/index",
+    "components/Login/Login",
     "pages/detil/detil",
     "components/MyTitle/MyTitle"
-    
+   
   ],
   "window": {
     "backgroundTextStyle": "light",

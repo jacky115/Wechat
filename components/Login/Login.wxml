@@ -1,0 +1,11 @@
+<view class="container">
+    <!-- <image class="bg_img" src="../../icon/background.jpg"  /> -->
+    <form action="" class="login_wrap">
+        <view class="login_title">
+            登录
+        </view>
+          <input type="text" name="username" placeholder="用户名"></input>
+          <input type="password" name="password" placeholder="密码"></input>
+          <button type="submit">登录</button>
+    </form>
+</view>

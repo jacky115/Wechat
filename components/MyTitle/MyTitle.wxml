@@ -8,9 +8,9 @@
           <image class="" src="../../icon/search.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false"/>
       </view>
         <!-- 用户 -->
-        <view class="user_icon">
+        <navigator url="../../components/Login/Login" class="user_icon">
             <image src="../../icon/user.png"></image>
-        </view>
+        </navigator>
           <!-- 下载 -->
           <view class="down_app">
             下载APP

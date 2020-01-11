@@ -20,4 +20,26 @@
             <text class="date">{{videoInfo.date}}</text>
         </view>
     </view>
+    <!-- 推荐视频 -->
+    <view class="other_list">
+        <navigator class="item_other" wx:for="{{othersList}}" wx:key="{{index}}">
+            <!-- 图片容器 -->
+            <view class="other_img_wrap">
+                <image class="" src="{{item.imgSrc}}" mode="widthFix" />
+            </view>
+            <!-- 视频详情 -->
+            <view class="other_info">
+                <!-- 标题 -->
+                <view class="other_title">{{item.title}}</view>
+                <!-- 播放量 -->
+                <view class="other_detail">
+                    <!-- 播放量 -->
+                    <text class="play_count">{{item.playMsg}}次观看</text>
+                    <!-- 评论 -->
+                    <text class="commnet_count">{{item.commnetCount}}</text>
+                </view>
+            </view>
+        </navigator>
+    </view>
 </view>
+<!-- wx:for="{{OthOthersList}}" wx:key="{{index}} -->
