@@ -9,6 +9,7 @@ Page({
     videoInfo: null,
     // 推荐视频
     othersList: [],
+    commentData:[]
     
   },
   /**
@@ -19,6 +20,7 @@ Page({
     this.getCurrentVideo(videoId)
     this.getOthersList(videoId)
     // console.log(othersList)
+    this.getCommentList(videoId)
   },
   /*根据视频的id获取视频详情*/
   getCurrentVideo(videoId) {
@@ -26,7 +28,7 @@ Page({
     wx.request({
       url: "https://easy-mock.com/mock/5c1dfd98e8bfa547414a5278/bili/videoDetail?id=" + videoId,
       success(res) {
-        console.log(res)
+        // console.log(res)
         if (res.data.code === 0) {
           that.setData({
             videoInfo: res.data.data.videoInfo
@@ -41,8 +43,8 @@ Page({
     wx.request({
       url: "https://easy-mock.com/mock/5c1dfd98e8bfa547414a5278/bili/othersList?id=" + videoId,
       success(res) {
-        console.log(res)
-        console.log(res.data.data)
+        // console.log(res)
+        // console.log(res.data.data)
         if (res.data.code === 0) {
           that.setData({
             othersList: res.data.data.othersList
@@ -51,7 +53,26 @@ Page({
       }
     })
   },
+  /*获取评论数据*/ 
+  getCommentList(videoId){
+    let that=this
+    wx.request({
+      url:"https://easy-mock.com/mock/5c1dfd98e8bfa547414a5278/bili/commentsList?id="+videoId,
+      success(res){
+        console.log(res)
+        if(res.data.code === 0){
+          that.setData({
+            commentData:res.data.data.commentData
+          })
+        }
+      }
+    })
+  },
+
+
+
   /**
+   * 
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {

@@ -1,15 +1,15 @@
 <view class="my_title">
     <!-- logo -->
     <navigator class="logo" target="" url="">
-        <image src="../../icon/logo.png"></image>
+        <image src="../../../icon/logo.png"></image>
     </navigator>
     <!-- 搜索 -->
       <view class="search_icon">
-          <image class="" src="../../icon/search.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false"/>
+          <image class="" src="../../../icon/search.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false"/>
       </view>
         <!-- 用户 -->
-        <navigator url="../../components/Login/Login" class="user_icon">
-            <image src="../../icon/user.png"></image>
+        <navigator open-type="switchTab" url="../Login/Login" class="user_icon" >
+            <image src="../../../icon/user.png"></image>
         </navigator>
           <!-- 下载 -->
           <view class="down_app">

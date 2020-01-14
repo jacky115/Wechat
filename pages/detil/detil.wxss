@@ -50,6 +50,9 @@
 }
 .other_info{
     width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .other_title{
     font-size: 28rpx;
@@ -59,6 +62,74 @@
     font-size: 26rpx;
     color: #666;
 }
+
+
+/* 评论列表 */
+/* 评论外层样式 */
+.comment_wrap{
+    margin-top: 15rpx;
+}
+/* 标题 */
+.cooment_title{
+    padding: 10rpx;
+    font-size: 28rpx;
+}
+/* 主体 */
+.comment_list{
+
+}
+/* 内容 */
+.comment_item{
+    margin-bottom: 10rpx;
+    padding: 10rpx;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1rpx solid #666;
+}
+/* 左侧容器 */
+.comment_user{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* 头像 */
+.comment_user image{
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+}
+/* 右侧容器 */
+.comment_info{
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+/* 右侧内容 */
+.cooment_detail{
+    display: flex;
+    justify-content: space-between;
+
+}
+/* 昵称 */
+.cooment_detail .author{
+    font-size: 30rpx;
+    color: #000;
+}
+/* 时间 */
+.cooment_detail .date{
+    color: #666;
+    font-size: 24rpx;
+}
+/* 评论 */
+.cooment_detail .comment_content{
+    font-size: 28rpx;
+    color: #000;
+}
+
+
+
 
 
 

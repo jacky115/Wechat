@@ -41,5 +41,33 @@
             </view>
         </navigator>
     </view>
+    <!-- 评论列表 -->
+    <view class="comment_wrap">
+        <view class="cooment_title">
+            评论 ({{commentData.commentTotalCount}})
+        </view>
+        <view class="comment_list">
+            <view class="comment_item" wx:for="{{commentData.commentList}}" wx:key="{{index}}">
+                <!-- 左侧 -->
+                <view class="comment_user">
+                    <!-- 头像图片 -->
+                    <image class="" src="{{item.userIconSrc}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" />
+                </view>
+                <!-- 右侧 -->
+                <view class="comment_info">
+                    <view class="cooment_detail">
+                        <!--  昵称 -->
+                        <texte class="author">{{item.username}}</texte>
+                        <!-- 时间 -->
+                        <text class="date">{{item.commentDate}}</text>
+                    </view>
+                    <!--评论 -->
+                    <view class="comment_content">
+                        {{item.commentInfo}}
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
 </view>
 <!-- wx:for="{{OthOthersList}}" wx:key="{{index}} -->
